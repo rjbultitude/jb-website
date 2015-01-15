@@ -16,6 +16,8 @@
 	float: left;
 	padding: 0.5em;
 	margin-left: -999em;
+	background-color: $color-green-dark;
+	color: white;
 }
 
 .skip:focus {
@@ -23,9 +25,35 @@
 }
 
 // -------------------------------------------------------------------------- */
-// ---------- Header -------------------------------------------------------- */
+// ---------- Main nav ------------------------------------------------------ */
 // -------------------------------------------------------------------------- */
 
+.nav-main {
+	background-color: $color-green-dark;
+	padding: em(16) 0;
+	text-align: center;
+	//position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	a {
+		display: inline-block;
+		color: white;
+
+		&:hover {
+			color: $color-green;
+		}
+	}
+}
+
 .header-main {
-	padding: em(12);
+	background-color: $color-green;
+	@extend %clearfix;
+	.logo,
+	.heading-main {
+		color: white;
+		width: 50%;
+		float: left;
+	}
 }

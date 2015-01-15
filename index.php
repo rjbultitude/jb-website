@@ -24,25 +24,72 @@
             <a href="#why" class="nav-link">why</a>
             <a href="#connect" class="nav-link">connect</a>
         </nav>
+        <div class="header-main">
+            <div class="logo">
+                <?php include("includes/GP-logo-full.php"); ?>
+            </div>
+            <h1 class="heading-main">
+                Jonathan Bartley
+                <span class="small">Streatham constituency</span>
+            </h1>
+        </div>
         <article class="intro" id="about">
-            <h1 class="page-heading">Jonathan Bartley</h1>
+            <h2 class="heading-page">Jonathan Bartley</h2>
             <div class="article-text">
+            <p class="standfirst">Jonathan is a community activist who has lived in the local area all his life.</p>
+                <p>He has been a governor of two local schools and a member of the board of local community forum Streatham Action for three years. He is chair of one the local safer neighbourhood ward panels that sets the priorities for local policing. He has successfully secured more funding for a local school, a commitment for proper access for all at Streatham train station and fought to get a new, improved local police base.</p>
+                <p>Jonathan is standing in his first general election after challenging David Cameron in 2010 over his policies regarding disabled children. Channel 4 ran a fact-check after the incident and found Jonathan to be right and the prime minister wrong.</p>
+                <p>Jonathan has written for national newspapers including the Guardian and Independent and written several books on ethics and politics. He has also raised over £1 million for charitable work in the developing world.</p>
             </div>
             <div class="article-image">
+                <img src="/images/jonathan_bartley.jpg" alt="Jonathan Bartley" />
             </div>
         </article>
 
         <aside class="support" id="support">
-            <a href="donate" class="link-cta">Donate</a>
-            <a href="join" class="link-cta">Join</a>
-            <a href="leaflet" class="link-cta">Leaflet</a>
+            <h2 class="heading-section">
+                Support the campaign
+            </h2>
+            <a href="donate" class="link-cta">
+                <span class="text">Donate <span class="small">to the campaign</span></span>
+                <span class="icon">
+                    <?php include("includes/cta-icon-donate.php"); ?>
+                </span>
+            </a>
+            <a href="join" class="link-cta">
+                <span class="text">Join <span class="small">the Green Party</span></span>
+                <span class="icon">
+                    <?php include("includes/cta-icon-join.php"); ?>
+                </span>
+            </a>
+            <a href="leaflet" class="link-cta">
+                <span class="text">Leaflet <span class="small">in your area</span></span>
+                <span class="icon">
+                    <?php include("includes/cta-icon-leaflet.php"); ?>
+                </span>
+            </a>
         </aside>
+
+        <section id="priorities">
+            <h2 class="heading-section">Jonathan’s priorities for Streatham</h2>
+            <h3>Action to tackle the housing crisis</h3>
+            <p>We need to get tougher with developers, build more social housing, introduce rent controls, and promote new housing models so everyone can get secure and affordable accommodation. Decisive action must be taken to stop local people being driven out by the property speculation and rising prices which are fueled by the big three parties.</p>
+            <h3>Fair wages for all</h3>
+            <p>Greens have successfully lobbied in Lambeth to get a Living Wage for council employees. London is one of the richest cities in the world but this wealth isn’t being shared equally. Local people need jobs they can build a life on, with fair pay and job security.</p>
+            <h3>Bringing the railways back into public hands</h3>
+            <p>Passengers need the transport service they deserve, at a price they can afford, which everyone can use. Local people are not getting a fair ride.  The time has come to stop the empty promises from local politicians and improve local transport links.</p>
+            <h3>Protection of local public services</h3>
+            <p>Our public services from health care and education, through to street cleaning and rubbish collection must remain accountable and run for the benefit of our community, not for profit. Both Labour and the Conservatives want to continue to privatise and contract out vital services.</p>
+            <h3>Clean air and greener streets</h3>
+            <p>The whole community benefits when streets are reclaimed for pedestrians and cyclists, areas are “greened” and the local area becomes a safer, more pleasant place to live. Lambeth is now the deadliest area in London, with more traffic fatalities than anywhere else, and over 100 deaths a year linked to polluted air. This must end.</p>
+            <p>Do you agree with Jonathan’s priorities for Streatham? <a href="#conenct">Let him know</a></p>
+        </section>
 
         <section class="section-feeds tabs">
             <nav class="nav-tabs">
-                <a href="#streatham">streatham</a>
-                <a href="#lambeth">lambeth</a>
-                <a href="#twitter">twitter</a>
+                <a href="#streatham">Streatham Green News</a>
+                <a href="#lambeth">Lambeth Green News</a>
+                <a href="#twitter">Jonathan’s Twitter</a>
             </nav>
             <div class="tabs-content">
                 <div id="streatham">
@@ -66,11 +113,47 @@
             </div>
         </section>
 
+        <article id="why">
+            <h2 class="heading-section">Why vote Green in Streatham constituency?</h2>
+            <section class="body-text">
+                <p>The Green Party is set to challenge Labour locally at the general election after beating both the Lib Dems and Conservatives right across Lambeth in both the European elections and Local elections in May last year.</p>
+                <p>The Greens are now in second place in Lambeth so there is no risk of letting in either the Conservatives or Lib Dems.</p>
+                <p>Since May, the Green Party has experienced a further surge in popularity nationally, meaning that London could get its first Green MP right here in Lambeth!</p>
+                <p>The Green Party is now the most popular party locally when it comes to policies. A survey of over 1,500 local people by the independent website voteforpolicies.org revealed that more people favoured the Green Party’s policies than any other party.</p>
+            </section>
+            <section>
+                <h3 class="sub-heading">Steatham policy survey results</h3>
+                <a href="#">View figure as a table</a>
+                <p>Take the survey yourself at <a href="http//www.voteforpolicies.org" class="">www.voteforpolicies.org</a></p>
+                <a href="#" rel="external">Find out more about what the Green Party stand for</a>
+            </section>
+        </article>
+
         <section id="connect">
-            <a href="fb" class="link-sm">Facebook</a>
-            <a href="fb" class="link-sm">Twitter</a>
-            <a href="fb" class="link-sm">Email</a>
-            <a href="fb" class="link-sm">You Tube</a>
+            <a href="twitter" class="link-sm">
+                <span class="text">Twitter</span>
+                <span class="icon">
+                    <?php include("includes/sm-icon-twitter.php"); ?>
+                </span>
+            </a>
+            <a href="fb" class="link-sm">
+                <span class="text">Facebook</span>
+                <span class="icon">
+                    <?php include("includes/sm-icon-fb.php"); ?>
+                </span>
+            </a>
+            <a href="email" class="link-sm">
+                <span class="text">Email</span>
+                <span class="icon">
+                    <?php include("includes/sm-icon-email.php"); ?>
+                </span>
+            </a>
+            <a href="fb" class="link-sm">
+                <span class="text">You Tube</span>
+                <span class="icon">
+                    <?php include("includes/sm-icon-youtube.php"); ?>
+                </span>
+            </a>
         </section>
 
         <!-- Contact and Social Media -->

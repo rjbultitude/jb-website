@@ -24,22 +24,32 @@ body {
 /* ---------- Headings ------------------------------------------------------ */
 /* -------------------------------------------------------------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+%heading {
     font-family: $font-heading;
     line-height: $line-height-heading;
     margin-bottom: $spacing;
+    color: $color-black;
 }
 
-h1 {
-	font-size:2.5em;
+.heading-main {
+    @extend %heading;
+    font-size: em(44);
+    text-transform: uppercase;
+
+    .small {
+        font-size: em(16);
+        text-transform: capitalize;
+    }
+}
+
+.heading-page,
+.heading-section {
+    @extend %heading;
+    font-size: em(36);
 }
 
 .heading-rss {
+    @extend %heading;
     font-size: em(40);
     margin-bottom: em(8, 40)
 }
@@ -47,6 +57,11 @@ h1 {
 /* -------------------------------------------------------------------------- */
 /* ---------- Paragraphs and Links ------------------------------------------ */
 /* -------------------------------------------------------------------------- */
+
+.standfirst {
+    font-family: $font-body;
+    font-size: em(21);
+}
 
 p {
     font-family: $font-body;
