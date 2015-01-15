@@ -64,7 +64,6 @@
   *display: inline;
 }
 
-
 /* -------------------------------------------------------------------------- */
 /* ---------- Visible ------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -72,4 +71,23 @@
 %visible {
   left: 0;
   position: static;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ---------- Boxes --------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+%box {
+  @include border-radius(4px);
+}
+
+%section-bg {
+  background-color: $color-beige;
+  background-image: url('images/logos/GP-logo-pale.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+
+  .lte-ie8 & {
+    background-image: url('images/logos/GP-logo-pale.png');
+  }
 }
