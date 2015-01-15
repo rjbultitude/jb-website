@@ -1,0 +1,42 @@
+/**
+* Mixins -- part of the Utilities Namespace
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
+* $version      1.2
+*/
+
+// -------------------------------------------------------------------------- */
+// ---------- Box model ----------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+@mixin box-sizing-fallback($args: border-box) {
+    @include box-sizing($args);
+    *behavior: url(/src/scripts/plugins/boxsizing.htc);
+}
+
+// -------------------------------------------------------------------------- */
+// ---------- Hide text/els ------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+@mixin text-off-screen {
+    text-indent:-999em;
+}
+
+@mixin el-off-screen {
+    position:absolute;
+    left:-999em;
+}
+
+// -------------------------------------------------------------------------- */
+// ---------- Inputs -------------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+@mixin placeholder() {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}

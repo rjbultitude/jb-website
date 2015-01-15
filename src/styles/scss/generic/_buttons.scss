@@ -1,0 +1,33 @@
+/**
+* Buttons -- part of the Generic Namespace
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2015, point-b.co.uk. All rights reserved.
+* $version      1.0
+*/
+
+button[role="button"] {
+    & > .icon {
+        //icon styles here
+    }
+    & > .text {
+        //text styles
+    }
+    &:hover {
+        //hover styles
+        & > .icon {
+            //hover icon styles
+        }
+    }
+}
+
+//Basic control styles
+[role="button"][rel="prev"],
+[role="button"][rel="next"] {
+    //Text
+    & .text {
+       //button controls styles
+    }
+}

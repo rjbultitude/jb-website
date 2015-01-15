@@ -1,0 +1,72 @@
+/**
+* Layout -- part of the Templates Namespace
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
+* $version      1.0
+*/
+
+// -------------------------------------------------------------------------- */
+// ---------- RSS Feed ------------------------------------------------------ */
+// -------------------------------------------------------------------------- */
+
+.wrapper-rss-feed {
+	padding: em(40) 0;
+}
+
+.list-feed + .list-feed {
+	padding-top: em(40);
+}
+
+.list-item-feed {
+	padding: em(20) 0;
+	border-bottom: 1px solid $color-grey;
+	@extend %clearfix;
+
+	.header {
+		float: left;
+		width: 100%;
+	}
+
+	.description {
+		clear: both;
+		@extend %clearfix;
+	}
+
+	.link-item-title {
+		display: block;
+		margin-bottom: em(10);
+		font-size: em(25);
+		text-decoration: none;
+		width: 65%;
+		float: left;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.date-time {
+		width: 25%;
+		float: right;
+		line-height: 1.75em;
+	}
+
+	img {
+		border: 1px solid $color-green;
+	}
+
+	p,
+	a,
+	blockquote,
+	span,
+	blockquote span {
+		font-family: $font-body !important;
+	}
+
+	a {
+		color: $color-green-dark !important;
+	}
+}

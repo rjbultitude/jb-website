@@ -1,0 +1,31 @@
+/**
+* Header
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
+* $version      1.0
+*/
+
+// -------------------------------------------------------------------------- */
+// ---------- Accessibility controls ---------------------------------------- */
+// -------------------------------------------------------------------------- */
+.skip {
+	display: block;
+	float: left;
+	padding: 0.5em;
+	margin-left: -999em;
+}
+
+.skip:focus {
+	margin-left: 0;
+}
+
+// -------------------------------------------------------------------------- */
+// ---------- Header -------------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+.header-main {
+	padding: em(12);
+}

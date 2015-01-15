@@ -1,0 +1,6 @@
+@mixin col($i) {
+    @include box-sizing-fallback(border-box);
+    float:left;
+    padding:0 $gutter / 2;
+    width:percentage(($column-width * $i) / $container-width); 
+}
