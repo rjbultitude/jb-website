@@ -1,0 +1,22 @@
+/**
+* Article -- part of the Templates Namespace
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
+* $version      1.0
+*/
+
+// -------------------------------------------------------------------------- */
+// ---------- Support ------------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+.section-priorities {
+	@extend %clearfix;
+	@extend %box;
+
+	.content {
+		@include col(12);
+	}
+}

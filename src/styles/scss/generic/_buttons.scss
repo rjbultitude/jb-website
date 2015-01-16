@@ -8,26 +8,17 @@
 * $version      1.0
 */
 
-button[role="button"] {
-    & > .icon {
-        //icon styles here
-    }
-    & > .text {
-        //text styles
-    }
-    &:hover {
-        //hover styles
-        & > .icon {
-            //hover icon styles
-        }
-    }
-}
+.link-cta {
+    @extend %box;
+    background-color: $color-green;
+    text-decoration: none;
 
-//Basic control styles
-[role="button"][rel="prev"],
-[role="button"][rel="next"] {
-    //Text
-    & .text {
-       //button controls styles
+    .text {
+        color: white;
+        text-align: center;
+    }
+
+    .icon {
+        display: inline-block;
     }
 }

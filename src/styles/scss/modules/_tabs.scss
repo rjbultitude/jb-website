@@ -1,0 +1,27 @@
+.tabs-list-item {
+	float: left;
+}
+
+.tabs-list-item:hover,
+.tabs-list-item:active,
+.tabs-list-item.active {
+	color: white;
+}
+
+.tab-content.inactive {
+	display: none;
+}
+
+.no-js .tab-content.inactive {
+	display: block;
+}
+
+.tab-content.load {
+	@include opacity(0);
+	@include standard-transition-opacity;
+}
+
+.tab-content.active {
+	@include opacity(1);
+	@include standard-transition-opacity;
+}

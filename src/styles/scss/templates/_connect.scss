@@ -1,0 +1,23 @@
+/**
+* Connect -- part of the Templates Namespace
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
+* $version      1.0
+*/
+
+// -------------------------------------------------------------------------- */
+// ---------- Support ------------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+.section-connect {
+	@extend %clearfix;
+	@extend %box;
+	@extend %section-bg;
+
+	.link-sm {
+		@include col(3);
+	}
+}

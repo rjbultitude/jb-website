@@ -30,19 +30,24 @@
 
 .nav-main {
 	background-color: $color-green-dark;
-	padding: em(16) 0;
 	text-align: center;
-	//position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 
+	&.fixed {
+		position: fixed;
+	}
+
 	a {
 		display: inline-block;
 		color: white;
+		text-decoration: none;
+		padding: em(16) em(8);
+		margin-right: em(1);
 
 		&:hover {
-			color: $color-green;
+			background-color: $color-green;
 		}
 	}
 }
@@ -50,10 +55,29 @@
 .header-main {
 	background-color: $color-green;
 	@extend %clearfix;
+
 	.logo,
 	.heading-main {
 		color: white;
-		width: 50%;
-		float: left;
+		@include col(6);
+
+		@media all and (max-width: em($bp1)) {
+			@include col(12);
+			margin-bottom: em(16);
+		}
+	}
+
+	.heading-main {
+		margin-top: em(20);
+		text-align: right;
+
+		@media all and (max-width: em($bp1)) {
+			text-align: center;
+		}
+
+		.small {
+			font-style: italic;
+			display: block;
+		}
 	}
 }

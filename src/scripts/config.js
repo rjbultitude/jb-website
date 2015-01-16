@@ -23,12 +23,9 @@ require.config({
 
         // Modules
         exampleModule: 'modules/example-module',
-        examplePlugin: 'plugins/example-plugin',
-        exampleJqueryPlugin: 'plugins/example-jquery-plugin',
 
-        // Behaviors
-        exampleBehavior: 'behaviors/example-behavior',
-        exampleBehaviorAJAX: 'behaviors/example-behavior-ajax'
+        //plugins
+        tabs: 'plugins/jquery.tabs.plugin'
     }
 
 });
@@ -37,40 +34,16 @@ require.config({
 /* ---------- Initialize app ------------------------------------------------ */
 /* -------------------------------------------------------------------------- */
 
-require(['jquery', 'base', 'behaviors', 'examplePlugin', 'exampleJqueryPlugin'], function($, base, behaviors, MyPlugin) {
+require(['jquery', 'base', 'behaviors', 'tabs'], function($, base) {
     'use strict';
 
     /* ---------- Global modules -------------------------------------------- */
     base.init();
 
     /* ---------- App modules ----------------------------------------------- */
-    behaviors.init();
-
-    //example of lazy loaded script module
-    if ($('body').hasClass('homepage')) {
-        require(['exampleModule'], function(module) {
-            module.init();
-        });
-    }
 
     /* ---------- Plugins --------------------------------------------------- */
     //initialise jQuery plugin
-    $('.my-jquery-selector').myJQueryPlugin({optionOne: 'I am the output of a typical jQuery plugin'});
-    
-    //Create new instance of JS vanilla plugin
-    var exampleInstance = new MyPlugin.MyPlugin('.my-selector');
-    //use new methods and properties
-    exampleInstance.aMethod('something');
-    exampleInstance.anotherMethod();
-    console.log('exampleInstance', exampleInstance);
-    
+    $('.tabs').JQueryTabsPlugin();
 
-
-    /* ---------- Utilities ------------------------------------------------- */
-    if (!base.ltIe9) {
-        //load something that is for IE9 or greater
-        
-    } else {
-        
-    }
 });

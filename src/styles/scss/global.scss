@@ -14,8 +14,10 @@
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/transform";
+@import "compass/css3/transition";
 @import "compass/css3/opacity";
 @import "compass/css3/box-sizing";
+@import "compass/css3/border-radius";
 
 /* -------------------------------------------------------------------------- */
 /* ---------- Initialize ---------------------------------------------------- */
@@ -44,7 +46,7 @@
 /* -------------------------------------------------------------------------- */
 /* ---------- Interactions ---------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
-@import "interactions/_animations.scss";
+@import "interactions/_transitions.scss";
 
 /* -------------------------------------------------------------------------- */
 /* ---------- Furniture ----------------------------------------------------- */
@@ -53,9 +55,19 @@
 @import "furniture/_footer.scss";
 
 /* -------------------------------------------------------------------------- */
+/* ---------- Modules ------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+@import "modules/_tabs.scss";
+
+/* -------------------------------------------------------------------------- */
 /* ---------- Templates ----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 @import "templates/_layout.scss";
+@import "templates/_article.scss";
+@import "templates/_support.scss";
 @import "templates/_rss-feed.scss";
-@import "templates/_twitter-timeline.scss";
+@import "templates/_feeds.scss";
+@import "templates/_priorities.scss";
+@import "templates/_why.scss";
+@import "templates/_connect.scss";
 

@@ -78,7 +78,9 @@
 /* -------------------------------------------------------------------------- */
 
 %box {
-  @include border-radius(4px);
+  @include border-radius(em(4));
+  padding: em(16);
+  margin-bottom: em(32);
 }
 
 %section-bg {

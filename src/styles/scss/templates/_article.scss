@@ -1,5 +1,5 @@
 /**
-* Widget -- part of the Modules Namespace
+* Article -- part of the Templates Namespace
 *
 * $author       Richard Bultitude
 * $email        richard.bultitude@gmail.com
@@ -9,9 +9,24 @@
 */
 
 // -------------------------------------------------------------------------- */
-// ---------- Wrapper ------------------------------------------------------- */
+// ---------- Support ------------------------------------------------------- */
 // -------------------------------------------------------------------------- */
 
-.wrapper-widget {
-	
+.article {
+	@extend %clearfix;
+	@extend %box;
+
+	.heading-article {
+		@include col(12);
+	}
+
+	.article-text,
+	.article-image {
+		@include col(6);
+
+		@media all and (max-width: em($bp1)) {
+			@include col(12);
+			margin-bottom: em(16);
+		}
+	}
 }
