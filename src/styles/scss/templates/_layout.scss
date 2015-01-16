@@ -26,6 +26,8 @@
 .wrapper {
     margin: 0 auto;
     max-width: em(960);
+    padding: 0 em(20);
+    @extend %clearfix;
 }
 
 .fullwidth {
