@@ -92,7 +92,11 @@
 	}
 
 	.logo {
-		height: 6em;
+		height: 6.3em;
+
+		svg {
+			margin-left: em(-9);
+		}
 	}
 
 	.heading-main {
