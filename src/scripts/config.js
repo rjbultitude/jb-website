@@ -4,7 +4,7 @@
     * $author       Richard Bultitude
     * $email        richard.bultitude@gmail.com
     * $url          http://www.point-b.co.uk
-    * $copyright    Copyright (c) 2013, thisiszone.com. All rights reserved.
+    * $copyright    Copyright (c) 2015, point-b.co.uk. All rights reserved.
     * $version      1.0
     *
     * $notes        Notes
@@ -19,10 +19,11 @@ require.config({
     paths: {
         //If IE8 support is required switch to jquery 1.11.0
         jquery: 'libs/jquery-1.11.0',
+        waypoints: 'libs/waypoints',
         behaviors: 'behaviors',
 
         // Modules
-        exampleModule: 'modules/example-module',
+        waypointsmod: 'modules/waypoints-module',
 
         //plugins
         tabs: 'plugins/jquery.tabs.plugin'
@@ -34,13 +35,14 @@ require.config({
 /* ---------- Initialize app ------------------------------------------------ */
 /* -------------------------------------------------------------------------- */
 
-require(['jquery', 'base', 'behaviors', 'tabs'], function($, base) {
+require(['jquery', 'base', 'waypointsmod', 'tabs'], function($, base, waypointsmod) {
     'use strict';
 
     /* ---------- Global modules -------------------------------------------- */
     base.init();
 
     /* ---------- App modules ----------------------------------------------- */
+    waypointsmod.init();
 
     /* ---------- Plugins --------------------------------------------------- */
     //initialise jQuery plugin

@@ -34,9 +34,25 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	position: relative;
 
 	&.fixed {
 		position: fixed;
+		z-index: 10;
+
+		.logo {
+			display: block;
+		}
+	}
+
+	.logo {
+		display: none;
+		font-size: 2em; 
+		width: em(20);
+		height: em(20);
+		position: absolute;
+		left: 10%;
+		top: 10%;
 	}
 
 	a {
@@ -44,11 +60,20 @@
 		color: white;
 		text-decoration: none;
 		padding: em(16) em(8);
-		margin-right: em(1);
 
+		@media all and (max-width: em(550)) {
+			display: block;
+			width: 100%;
+		}
+
+		&.active,
 		&:hover {
 			background-color: $color-green;
 		}
+	}
+
+	a:not(:first-child) {
+		margin-left: -3px;
 	}
 }
 
@@ -63,8 +88,11 @@
 
 		@media all and (max-width: em($bp1)) {
 			@include col(12);
-			margin-bottom: em(16);
 		}
+	}
+
+	.logo {
+		height: 6em;
 	}
 
 	.heading-main {
@@ -73,6 +101,7 @@
 
 		@media all and (max-width: em($bp1)) {
 			text-align: center;
+			margin-top: em(6);
 		}
 
 		.small {

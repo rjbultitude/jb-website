@@ -18,6 +18,13 @@ $bezier-ease-out: 0.17,0.67,0.59,0.97;
     @include transition-property(background-color,color);
 }
 
+@mixin standard-transition-fill($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+    @include transition-timing-function(cubic-bezier($bezier-curve));
+    @include transition-duration($duration);
+    @include transition-delay($delay);
+    @include transition-property(fill);
+}
+
 @mixin standard-transition-opacity($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);

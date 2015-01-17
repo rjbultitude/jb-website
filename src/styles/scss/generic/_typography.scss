@@ -34,7 +34,7 @@ body {
 .heading-main {
     @extend %heading;
     font-size: em(28);
-    line-height: em(20, 28);
+    line-height: em(26, 28);
     text-transform: uppercase;
 
     .small {

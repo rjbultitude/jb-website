@@ -13,7 +13,7 @@
 // -------------------------------------------------------------------------- */
 
 .wrapper-rss-feed {
-	padding: em(40) 0;
+	padding: em(8) 0;
 }
 
 .list-feed + .list-feed {
@@ -25,6 +25,10 @@
 	border-bottom: 1px solid $color-grey;
 	@extend %clearfix;
 
+	&:last-of-type {
+		border-bottom: 0 none;
+	}
+
 	.header {
 		float: left;
 		width: 100%;
@@ -33,6 +37,7 @@
 	.description {
 		clear: both;
 		@extend %clearfix;
+		word-wrap: break-word;
 	}
 
 	.link-item-title {

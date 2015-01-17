@@ -18,10 +18,15 @@
 <body>
     <a href="#maincontent" class="skip">Skip to content</a>
         <nav class="nav-main">
-            <a href="#about" class="nav-link">about</a>
-            <a href="#support" class="nav-link">support</a>
-            <a href="#why" class="nav-link">why</a>
-            <a href="#connect" class="nav-link">connect</a>
+                <div class="logo">
+                    <?php include("includes/GP-logo-white.php"); ?>
+                </div>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#support" class="nav-link">Support</a>
+            <a href="#priorities" class="nav-link">Priorities</a>
+            <a href="#news" class="nav-link">News</a>
+            <a href="#why" class="nav-link">Why vote green?</a>
+            <a href="#connect" class="nav-link">Connect</a>
         </nav>
         <div class="header-main">
             <div class="wrapper">
@@ -94,8 +99,9 @@
             </div>
         </section>
 
-        <section class="section-feeds tabs">
+        <section class="section-news tabs" id="news">
             <div class="wrapper">
+                <h2 class="heading-section">News &amp; activity</h2>
                 <nav class="nav-tabs">
                     <ul>
                         <li><a href="#streatham">Streatham Green News</a></li>
@@ -103,7 +109,7 @@
                         <li><a href="#twitter">Jonathan’s Twitter</a></li>
                     </ul>
                 </nav>
-                <div class="">
+                <div class="tabs-content-wrapper">
                     <div id="streatham" class="tab-content">
                         <!-- Streatham news feed -->
                         <?php include("rss2html-streathamnews.php"); ?>
@@ -137,15 +143,19 @@
                 </section>
                 <section class="survey-data">
                     <h3 class="sub-heading">Steatham policy survey results</h3>
+                    <img src="/images/survey-results-chart.png" alt="" />
                     <a href="#">View figure as a table</a>
                     <p>Take the survey yourself at <a href="http//www.voteforpolicies.org" class="">www.voteforpolicies.org</a></p>
-                    <a href="#" rel="external">Find out more about what the Green Party stand for</a>
+                    <p><a href="#" rel="external">Find out more about what the Green Party stand for</a></p>
                 </section>
             </div>
         </article>
 
         <section id="connect" class="section-connect">
             <div class="wrapper">
+                <h2 class="heading-section">
+                    Connect
+                </h2>
                 <a href="twitter" class="link-sm">
                     <span class="text">Twitter</span>
                     <span class="icon">
@@ -173,7 +183,9 @@
             </div>
         </section>
 
-    </div>
+        <div class="footer-main">
+            <p>Jonathan Barley. Green Party candidate for Streatham, London. All rights reserved 2015.</p>
+        </div>
     <script data-main="src/scripts/config" src="src/scripts/libs/require.js"></script>
 </body>
 </html>

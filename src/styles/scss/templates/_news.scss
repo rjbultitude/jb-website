@@ -31,8 +31,17 @@
 			@include border-top-left-radius(4px);
 			@include border-top-right-radius(4px);
 
+			@media all and (max-width: em(580)) {
+				width: 33%;
+			}
+
+			@media all and (max-width: em(370)) {
+				width: 100%;
+			}
+
 			a {
 				display: block;
+				min-height: em(60);
 				background-color: $color-green;
 				padding: em(6);
 				color: white;

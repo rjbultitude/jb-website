@@ -19,5 +19,35 @@
 
 	.link-sm {
 		@include col(3);
+
+		.text {
+			@include el-off-screen;
+		}
+
+		.icon {
+			display: block;
+
+			svg {
+				height: 10em;
+			}
+		}
+
+		&:hover {
+			.bg {
+				@include standard-transition-fill;
+			}
+			.twitter-bg {
+				fill: darken(#55ACEE,10%);
+			}
+			.youtube-bg {
+				fill: darken(#E2E2E2,10%);
+			}
+			.email-bg {
+				fill: darken(#DD931D, 10%);
+			}
+			.fb-bg {
+				fill: darken(#3D5A98, 10%);
+			}
+		}
 	}
 }

@@ -85,11 +85,11 @@
 
 %section-bg {
   background-color: $color-beige;
-  background-image: url('images/logos/GP-logo-pale.svg');
-  background-position: top right;
+  background-image: url('/images/logos/GP-logo-pale.svg');
+  background-position: right -60px top -60px;
   background-repeat: no-repeat;
 
   .lte-ie8 & {
-    background-image: url('images/logos/GP-logo-pale.png');
+    background-image: url('/images/logos/GP-logo-pale.png');
   }
 }
