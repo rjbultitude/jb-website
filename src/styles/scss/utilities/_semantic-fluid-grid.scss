@@ -87,7 +87,7 @@ body {
     width: 100%;
 }
 
-@mixin columns-indent($cols, $push, $pull) {
+@mixin column-spread($push, $cols, $pull) {
     @include column($cols);
     @include push($push);
     @include pull($pull);

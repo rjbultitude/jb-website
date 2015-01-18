@@ -39,12 +39,10 @@
 				text-decoration: none;
 				text-align: center;
 
-				&:hover {
-					background-color: white;
-					color: $color-green-dark;
-				}
+				@include hoverActiveFocus(background-color, $color-green, color, $color-green-dark);
 			}
 		}
+		
 		li.active {
 			a {
 				background-color: white;

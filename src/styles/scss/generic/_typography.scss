@@ -85,6 +85,22 @@ a {
     color: $color-green-dark;
 }
 
+[rel="external"] {
+    display: inline-block;
+    @extend %box;
+    padding: em(4);
+    padding-right: em(21);
+    text-decoration: none;
+    background: url('/images/icons/external.svg') no-repeat right $color-green-dark;
+    color: white;
+    margin-bottom: em(16);
+
+    @include hoverActiveFocus(background-color, $color-green);
+
+    .lt-ie8 & {
+        background-image: url('/images/icons/external.png');
+    }
+}
 
 /* -------------------------------------------------------------------------- */
 /* ---------- Blockquotes --------------------------------------------------- */

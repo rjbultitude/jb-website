@@ -18,8 +18,13 @@
 	@extend %section-bg;
 
 	.link-cta {
-		@include col(4);
+		@include column(4);
+		padding: em(8);
 		min-height: em(200);
+
+		@media all and (max-width: em($bp2)) {
+			@include column-spread(2,8,2);
+		}
 
 		.text {
 			text-align: center;

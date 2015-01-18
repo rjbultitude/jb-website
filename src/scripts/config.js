@@ -22,6 +22,9 @@ require.config({
         waypoints: 'libs/waypoints',
         behaviors: 'behaviors',
 
+        //behaviors
+        mainNav: 'behaviors/main-nav-behavior',
+
         // Modules
         waypointsmod: 'modules/waypoints-module',
 
@@ -35,11 +38,12 @@ require.config({
 /* ---------- Initialize app ------------------------------------------------ */
 /* -------------------------------------------------------------------------- */
 
-require(['jquery', 'base', 'waypointsmod', 'tabs'], function($, base, waypointsmod) {
+require(['jquery', 'base', 'behaviors', 'waypointsmod', 'tabs'], function($, base, behaviors, waypointsmod) {
     'use strict';
 
     /* ---------- Global modules -------------------------------------------- */
     base.init();
+    behaviors.init();
 
     /* ---------- App modules ----------------------------------------------- */
     waypointsmod.init();

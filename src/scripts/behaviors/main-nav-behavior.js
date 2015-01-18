@@ -17,10 +17,12 @@ define(['jquery'], function($) {
 
         var toggleMobileNav = function() {
             btn.on('click', function() {
-                if mainMenu.is(':visible') {
-                    mainMenu.hide();
+                if (mainMenu.is(':visible')) {
+                    mainMenu.addClass('closed').removeClass('open');
+                    $(this).text('Open menu');
                 } else {
-                    mainMenu.show();
+                    mainMenu.addClass('open').removeClass('closed');
+                    $(this).text('Close menu');
                 }
             });
         };

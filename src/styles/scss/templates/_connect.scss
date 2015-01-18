@@ -18,7 +18,12 @@
 	@extend %section-bg;
 
 	.link-sm {
-		@include col(3);
+		@include column(3);
+
+		@media all and (max-width: em($bp2)) {
+			@include column-spread(3,6,3);
+			margin-bottom: em(16);
+		}
 
 		.text {
 			@include el-off-screen;
@@ -26,13 +31,11 @@
 
 		.icon {
 			display: block;
-
-			svg {
-				height: 10em;
-			}
 		}
 
-		&:hover {
+		&:hover,
+		&:active,
+		&:focus {
 			.bg {
 				@include standard-transition-fill;
 			}

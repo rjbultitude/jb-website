@@ -17,16 +17,22 @@
 </head>
 <body>
     <a href="#maincontent" class="skip">Skip to content</a>
-        <nav class="nav-main">
-                <div class="logo">
-                    <?php include("includes/GP-logo-white.php"); ?>
-                </div>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#support" class="nav-link">Support</a>
-            <a href="#priorities" class="nav-link">Priorities</a>
-            <a href="#news" class="nav-link">News</a>
-            <a href="#why" class="nav-link">Why vote green?</a>
-            <a href="#connect" class="nav-link">Connect</a>
+        <nav class="nav-main" data-behavior="mainNav">
+            <div class="logo">
+                <?php include("includes/GP-logo-white.php"); ?>
+            </div>
+            <button class="btn-toggle-nav" data-el="btn">
+                <span class="text">Open menu</span>
+                <span class="icon"></span>
+            </button>
+            <div class="wrapper-main-nav" data-el="menu">
+                <a href="#about" class="link-nav">About</a>
+                <a href="#support" class="link-nav">Support</a>
+                <a href="#priorities" class="link-nav">Priorities</a>
+                <a href="#news" class="link-nav">News</a>
+                <a href="#why" class="link-nav">Why vote green?</a>
+                <a href="#connect" class="link-nav">Connect</a>
+            </div>
         </nav>
         <div class="header-main">
             <div class="wrapper">
@@ -114,12 +120,14 @@
                         <!-- Streatham news feed -->
                         <?php include("rss2html-streathamnews.php"); ?>
                         <!-- end Streatham news feed -->
+                        <a href="http://streathamnews.blogspot.com/" rel="external" target="_blank">View the whole feed</a>
                     </div>
 
                     <div id="lambeth" class="tab-content">
                         <!-- Lambeth news feed -->
                         <?php include("rss2html-lambethgreennews.php"); ?>
                         <!-- end Lambeth news feed -->
+                        <a href="http://lambeth.greenparty.org.uk" rel="external" target="_blank">View the whole feed</a>
                     </div>
 
                     <div id="twitter" class="tab-content">
@@ -127,6 +135,7 @@
                         <a class="twitter-timeline" href="https://twitter.com/jon_bartley" data-widget-id="554697710960648192">Tweets by @jon_bartley</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                         <!-- end twitter feed -->
+                        <a href="https://twitter.com/jon_bartley" rel="external" target="_blank">View the whole feed</a>
                     </div>
                 </div>
             </div>
@@ -146,7 +155,7 @@
                     <img src="/images/survey-results-chart.png" alt="" />
                     <a href="#">View figure as a table</a>
                     <p>Take the survey yourself at <a href="http//www.voteforpolicies.org" class="">www.voteforpolicies.org</a></p>
-                    <p><a href="#" rel="external">Find out more about what the Green Party stand for</a></p>
+                    <p><a href="http://greenparty.org.uk/values/" rel="external" target="_blank">Find out more about what the Green Party stand for</a></p>
                 </section>
             </div>
         </article>

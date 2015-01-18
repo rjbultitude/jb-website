@@ -17,6 +17,6 @@
 	@extend %box;
 
 	.content {
-		@include col(12);
+		@include column(12);
 	}
 }
