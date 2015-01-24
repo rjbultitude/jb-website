@@ -35,10 +35,14 @@
 // -------------------------------------------------------------------------- */
 
 @mixin hoverActiveFocus($property, $value, $property2: visibility, $value2: visible) {
-    &:hover, &:active, &:focus {
+    &:hover, 
+    &:active,
+    &:focus {
         #{$property}: $value;
         #{$property2}: $value2;
+        @content;
     }
+
 }
 
 // -------------------------------------------------------------------------- */

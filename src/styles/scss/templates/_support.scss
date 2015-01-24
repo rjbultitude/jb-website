@@ -17,30 +17,57 @@
 	@extend %box;
 	@extend %section-bg;
 
+	.heading-section {
+		@include column(12);
+	}
+
 	.link-cta {
 		@include column(4);
-		padding: em(8);
 		min-height: em(200);
+		position: relative;
 
 		@media all and (max-width: em($bp2)) {
 			@include column-spread(2,8,2);
 		}
 
 		.text {
+			display: block;
 			text-align: center;
-			font-size: em(21);
-			margin: em(8) 0;
+			font-size: em(33);
+			line-height: 0.9em;
+			padding: em(8);
+
+			.small {
+				display: block;
+				font-size: 0.5em;
+			}
 		}
 
 		.icon {
 			padding: em(16);
 			background-color: $color-green-dark;
 			width: 100%;
+			position: absolute;
+			z-index: index($elements, icon);
+			bottom: 0;
+			left: 0;
+			@include standard-transition-padding;
 
 			svg {
 				display: block;
 				width: 100%;
 				height: em(80);
+			}
+		}
+
+		@include hoverActiveFocus(background-color, lighten($color-green,2%)) {
+			.icon {
+				padding: em(22) 0;
+			}
+
+			polygon,
+			path {
+				fill: $color-green;
 			}
 		}
 	}

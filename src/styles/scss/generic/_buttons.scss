@@ -8,8 +8,16 @@
 * $version      1.0
 */
 
+button {
+    border: 0 none;
+    padding: em(4);
+    text-align: center;
+    cursor: pointer;
+}
+
 .link-cta {
     @extend %box;
+    padding: 0;
     background-color: $color-green;
     text-decoration: none;
 
@@ -19,13 +27,7 @@
     }
 
     .icon {
-        display: inline-block;
+        display: block;
+        @incude border-bottom-radius(em($border-radius-default));
     }
-}
-
-button {
-    border: 0 none;
-    padding: em(4);
-    text-align: center;
-    cursor: pointer;
 }

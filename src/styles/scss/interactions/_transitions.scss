@@ -1,59 +1,60 @@
 $bezier-ease-out: 0.17,0.67,0.59,0.97;
+$duration-default: 0.7s;
 
 // -------------------------------------------------------------------------- */
 // ---------- transitions --------------------------------------------------- */
 // -------------------------------------------------------------------------- */
 
-@mixin standard-transition($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
     @include transition-property(all);
 }
 
-@mixin standard-transition-bg-color($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-bg-color($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
     @include transition-property(background-color,color);
 }
 
-@mixin standard-transition-fill($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-fill($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
     @include transition-property(fill);
 }
 
-@mixin standard-transition-opacity($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-opacity($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
     @include transition-property(opacity);
 }
 
-@mixin standard-transition-bottom($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-bottom($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
     @include transition-property(bottom);
 }
 
-@mixin standard-transition-left($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-left($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
     @include transition-property(left);
 }
 
-@mixin standard-transition-padding($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-padding($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
-    @include transition-property(padding-left);
+    @include transition-property(padding);
 }
 
-@mixin standard-transition-transform($duration: 2s, $delay: 0, $bezier-curve: $bezier-ease-out) {
+@mixin standard-transition-transform($duration: $duration-default, $delay: 0, $bezier-curve: $bezier-ease-out) {
     @include transition-timing-function(cubic-bezier($bezier-curve));
     @include transition-duration($duration);
     @include transition-delay($delay);
