@@ -15,6 +15,7 @@
 .article {
 	@extend %clearfix;
 	@extend %box;
+	
 
 	.heading-article {
 		@include column(12);
@@ -26,7 +27,7 @@
 
 		@media all and (max-width: em($bp1)) {
 			@include column(12);
-			margin-bottom: em(16);
+			margin-bottom: em(24);
 		}
 	}
 }

@@ -38,6 +38,8 @@ body {
     text-transform: uppercase;
 
     .small {
+        font-family: $font-plain;
+        font-style: italic;
         font-size: em(12);
         text-transform: capitalize;
     }
@@ -48,6 +50,8 @@ body {
 .heading-article {
     @extend %heading;
     font-size: em(36);
+    line-height: em(36, 36);
+    margin-bottom: em(18, 36);
 }
 
 .sub-heading {
@@ -89,10 +93,10 @@ a {
 [rel="external"] {
     display: inline-block;
     @extend %box;
-    padding: em(4);
-    padding-right: em(21);
+    padding: em(8);
+    padding-right: em(32);
     text-decoration: none;
-    background: url('/images/icons/external.svg') no-repeat right $color-green-dark;
+    background: url('/images/icons/external.svg') no-repeat right 5px center $color-green-dark;
     color: white;
     margin-bottom: em(16);
 

@@ -31,6 +31,14 @@
 
 		.icon {
 			display: block;
+
+			.wrapper-svg {
+				@include padding-hack-wrapper(100, 211, 209);
+
+				svg {
+					@include padding-hack-inner-el;
+				}
+			}
 		}
 
 		&:hover,

@@ -6,11 +6,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Green Party candidate Jonathan Bartley</title>
+    <meta name="description" content="News, activity and priorities for Green Party candidate Jonathan Bartley">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+    
     <script type="text/javascript" src="src/scripts/modernizr.js"></script>
     <link rel="stylesheet" href="src/styles/css/global.css">
 
@@ -47,7 +46,7 @@
         </div>
         <article class="article article-intro" id="about">
             <div class="wrapper">
-                <h2 class="heading-article">Jonathan Bartley</h2>
+                <h2 class="heading-article">About your Green Party candidate Jonathan Bartley</h2>
                 <div class="article-text">
                 <p class="standfirst">Jonathan is a community activist who has lived in the local area all his life.</p>
                     <p>He has been a governor of two local schools and a member of the board of local community forum Streatham Action for three years. He is chair of one the local safer neighbourhood ward panels that sets the priorities for local policing. He has successfully secured more funding for a local school, a commitment for proper access for all at Streatham train station and fought to get a new, improved local police base.</p>

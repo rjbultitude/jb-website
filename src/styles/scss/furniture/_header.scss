@@ -53,6 +53,14 @@
 		position: absolute;
 		left: 10%;
 		top: 10%;
+
+		.wrapper-svg {
+			@include padding-hack-wrapper(100, 40, 34);
+
+			svg {
+				@include padding-hack-inner-el;
+			}
+		}
 	}
 
 	.btn-toggle-nav {
@@ -71,6 +79,7 @@
 
 		@media all and (max-width: em(550)) {
 			display: inline-block;
+			width: 100%;
 		}
 	}
 
@@ -78,7 +87,11 @@
 		display: inline-block;
 		color: white;
 		text-decoration: none;
-		padding: em(16) em(8);
+		padding: em(16) em(12);
+
+		@media all and (max-width: em($bp2)) {
+			padding: em(8) em(12);
+		}
 
 		@include hoverActiveFocus(background-color, $color-green);
 	}
@@ -95,6 +108,7 @@
 	@media all and (max-width: em(550)) {
 		display: none;
 		width: 100%;
+		padding: em(8) 0;
 	}
 
 	&.open {
@@ -125,19 +139,29 @@
 	}
 
 	.logo {
-		height: 6.3em;
 		display: inline-block;
+		margin-top: em(12);
+
+		.wrapper-svg {
+			@include padding-hack-wrapper(100, 351, 94);
+			margin: 0 auto;
+
+			@media all and (max-width: em($bp1)) {
+				@include padding-hack-wrapper(75, 351, 94);
+			}
+
+			svg {
+				@include padding-hack-inner-el;
+			}
+		}
 
 		@media all and (max-width: em($bp1)) {
 			@include column-spread(3,6,3);
 			text-align: center;
-			height: 3.5em;
 		}
 
 		@media all and (max-width: em($bp2)) {
-			@include column-spread(2,8,2);
-			text-align: center;
-			height: 3.5em;
+			@include column-spread(1,10,1);
 		}
 
 		svg {
@@ -155,7 +179,8 @@
 
 		@media all and (max-width: em($bp1)) {
 			text-align: center;
-			margin-top: em(6);
+			margin-top: em(8);
+			margin-bottom: em(12);
 		}
 
 		.small {

@@ -51,6 +51,7 @@
 			z-index: index($elements, icon);
 			bottom: 0;
 			left: 0;
+			@include border-bottom-radius(4px);
 			@include standard-transition-padding;
 
 			svg {
