@@ -19,10 +19,10 @@ define(['jquery'], function($) {
             btn.on('click', function() {
                 if (mainMenu.is(':visible')) {
                     mainMenu.addClass('closed').removeClass('open');
-                    $(this).text('Open menu');
+                    $('.text', this).text('Open menu');
                 } else {
                     mainMenu.addClass('open').removeClass('closed');
-                    $(this).text('Close menu');
+                    $('.text', this).text('Close menu');
                 }
             });
         };

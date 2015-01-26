@@ -14,18 +14,20 @@
     <link rel="stylesheet" href="src/styles/css/global.css">
 
 </head>
-<body>
+<body id="top">
     <a href="#maincontent" class="skip">Skip to content</a>
         <nav class="nav-main" data-behavior="mainNav">
             <div class="logo">
                 <?php include("includes/GP-logo-white.php"); ?>
             </div>
-            <button class="btn-toggle-nav" data-el="btn">
+            <button class="btn-toggle-nav" data-el="btn" aria-live="polite" data-behavior="menuToggleButton">
                 <span class="text">Open menu</span>
-                <span class="icon"></span>
+                <span class="icon">
+                  <?php include("includes/menu.php"); ?>  
+                </span>
             </button>
             <div class="wrapper-main-nav" data-el="menu">
-                <a href="#about" class="link-nav">About</a>
+                <a href="#top" class="link-nav">About</a>
                 <a href="#support" class="link-nav">Support</a>
                 <a href="#priorities" class="link-nav">Priorities</a>
                 <a href="#news" class="link-nav">News</a>
@@ -44,7 +46,8 @@
                 </h1>
             </div>
         </div>
-        <article class="article article-intro" id="about">
+        <article class="article article-intro">
+            <span id="about" class="section-anchor"></span>
             <div class="wrapper">
                 <h2 class="heading-article">About your Green Party candidate Jonathan Bartley</h2>
                 <div class="article-text">
@@ -59,7 +62,8 @@
             </div>
         </article>
 
-        <aside class="section-support" id="support">
+        <aside class="section-support">
+            <span id="support" class="section-anchor"></span>
             <div class="wrapper">
                 <h2 class="heading-section">
                     Support the campaign
@@ -85,7 +89,8 @@
             </div>
         </aside>
 
-        <section id="priorities" class="section-priorities">
+        <section class="section-priorities">
+            <span id="priorities" class="section-anchor"></span>
             <div class="wrapper">
                 <div class="content">
                     <h2 class="heading-section">Jonathan’s priorities for Streatham</h2>
@@ -104,7 +109,8 @@
             </div>
         </section>
 
-        <section class="section-news tabs" id="news">
+        <section class="section-news tabs">
+            <span id="news" class="section-anchor"></span>
             <div class="wrapper">
                 <h2 class="heading-section">News &amp; activity</h2>
                 <nav class="nav-tabs">
@@ -140,7 +146,8 @@
             </div>
         </section>
 
-        <article id="why" class="article article-why">
+        <article class="article article-why">
+            <span id="why" class="section-anchor"></span>
             <div class="wrapper">
                 <h2 class="heading-article">Why vote Green in Streatham constituency?</h2>
                 <section class="body-text">
@@ -159,30 +166,33 @@
             </div>
         </article>
 
-        <section id="connect" class="section-connect">
+        <section class="section-connect">
+            <span id="connect" class="section-anchor"></span>
             <div class="wrapper">
                 <h2 class="heading-section">
                     Connect
                 </h2>
-                <a href="twitter" class="link-sm">
+                <p>Jonathan would be really pleased to hear from you. Please do get in touch if you would like to help with his
+campaign or ask any questions. Or call his Streatham office: 020 8769 8163</p>
+                <a href="https://twitter.com/jon_bartley" class="link-sm" target="_blank">
                     <span class="text">Twitter</span>
                     <span class="icon">
                         <?php include("includes/sm-icon-twitter.php"); ?>
                     </span>
                 </a>
-                <a href="fb" class="link-sm">
+                <a href="https://www.facebook.com/jonathan.c.bartley" class="link-sm" target="_blank">
                     <span class="text">Facebook</span>
                     <span class="icon">
                         <?php include("includes/sm-icon-fb.php"); ?>
                     </span>
                 </a>
-                <a href="email" class="link-sm">
+                <a href="mailto:jonathan.bartley@greenparty.org.uk" class="link-sm" target="_blank">
                     <span class="text">Email</span>
                     <span class="icon">
                         <?php include("includes/sm-icon-email.php"); ?>
                     </span>
                 </a>
-                <a href="https://www.youtube.com/channel/UCWAkdD1ox4r1PFAX0S31GCw" class="link-sm">
+                <a href="https://www.youtube.com/channel/UCWAkdD1ox4r1PFAX0S31GCw" class="link-sm" target="_blank">
                     <span class="text">You Tube</span>
                     <span class="icon">
                         <?php include("includes/sm-icon-youtube.php"); ?>
