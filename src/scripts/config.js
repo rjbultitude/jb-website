@@ -24,6 +24,7 @@ require.config({
 
         //behaviors
         mainNav: 'behaviors/main-nav-behavior',
+        surveyChart: 'behaviors/surevy-chart',
 
         // Modules
         waypointsmod: 'modules/waypoints-module',

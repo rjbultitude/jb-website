@@ -1,3 +1,4 @@
+<?php include("includes/mode.php"); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -10,8 +11,8 @@
     <meta name="description" content="News, activity and priorities for Green Party candidate Jonathan Bartley">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <script type="text/javascript" src="src/scripts/modernizr.js"></script>
-    <link rel="stylesheet" href="src/styles/css/global.css">
+    <script type="text/javascript" src="/<?php echo $mode; ?>/scripts/modernizr.js"></script>
+    <link rel="stylesheet" href="/<?php echo $mode; ?>/styles/css/global.css">
 
 </head>
 <body id="top">
@@ -23,7 +24,7 @@
             <button class="btn-toggle-nav" data-el="btn" aria-live="polite" data-behavior="menuToggleButton">
                 <span class="text">Open menu</span>
                 <span class="icon">
-                  <?php include("includes/menu.php"); ?>  
+                  <?php include("includes/menu.php"); ?>
                 </span>
             </button>
             <div class="wrapper-main-nav" data-el="menu">
@@ -68,19 +69,19 @@
                 <h2 class="heading-section">
                     Support the campaign
                 </h2>
-                <a href="donate" class="link-cta">
+                <a href="http://greenparty.org.uk/donate/" class="link-cta">
                     <span class="text">Donate <span class="small">to the campaign</span></span>
                     <span class="icon">
                         <?php include("includes/cta-icon-donate.php"); ?>
                     </span>
                 </a>
-                <a href="join" class="link-cta">
+                <a href="https://my.greenparty.org.uk/civicrm/membership/joining" class="link-cta" target="_blank">
                     <span class="text">Join <span class="small">the Green Party</span></span>
                     <span class="icon">
                         <?php include("includes/cta-icon-join.php"); ?>
                     </span>
                 </a>
-                <a href="leaflet" class="link-cta">
+                <a href="http://lambeth.greenparty.org.uk/get-involved.html" class="link-cta">
                     <span class="text">Leaflet <span class="small">in your area</span></span>
                     <span class="icon">
                         <?php include("includes/cta-icon-leaflet.php"); ?>
@@ -158,9 +159,41 @@
                 </section>
                 <section class="survey-data">
                     <h3 class="sub-heading">Steatham policy survey results</h3>
-                    <img src="/images/survey-results-chart.png" alt="" />
-                    <a href="#">View figure as a table</a>
-                    <p>Take the survey yourself at <a href="http//www.voteforpolicies.org" class="">www.voteforpolicies.org</a></p>
+                    <figure id="figure-survey-chart">
+                        <img src="/images/survey-results-chart.png" alt="Steatham policy survey results" />
+                    </figure>
+                    <table id="table-survey-chart">
+                        <tr>
+                            <th>Party</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td>Green Party</td>
+                            <td>30.01%</td>
+                        </tr>
+                        <tr>
+                            <td>Labour</td>
+                            <td>23.87%</td>
+                        </tr>
+                        <tr>
+                            <td>Lib Dems</td>
+                            <td>17.59%</td>
+                        </tr>
+                        <tr>
+                            <td>UKIP</td>
+                            <td>9.77%</td>
+                        </tr>
+                        <tr>
+                            <td>Conservatives</td>
+                            <td>13.37%</td>
+                        </tr>
+                        <tr>
+                            <td>BNP</td>
+                            <td>5.39%</td>
+                        </tr>
+                    </table>
+                    <a href="#table-survey-chart" data-behavior="surveyChartToggle">View figure as a table</a>
+                    <p>Take the survey yourself at <a href="http://voteforpolicies.org.uk/" target="_blank">www.voteforpolicies.org</a></p>
                     <p><a href="http://greenparty.org.uk/values/" rel="external" target="_blank">Find out more about what the Green Party stand for</a></p>
                 </section>
             </div>
@@ -204,6 +237,6 @@ campaign or ask any questions. Or call his Streatham office: 020 8769 8163</p>
         <div class="footer-main">
             <p>Jonathan Barley. Green Party candidate for Streatham, London. All rights reserved 2015.</p>
         </div>
-    <script data-main="src/scripts/config" src="src/scripts/libs/require.js"></script>
+    <script data-main="/<?php echo $mode; ?>/scripts/config" src="/<?php echo $mode; ?>/scripts/libs/require.js"></script>
 </body>
 </html>

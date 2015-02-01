@@ -1,0 +1,22 @@
+/**
+* Forms -- part of the Generic Namespace
+*
+* $author       Richard Bultitude
+* $email        richard.bultitude@gmail.com
+* $url          http://www.point-b.co.uk
+* $copyright    Copyright (c) 2015, point-b.co.uk. All rights reserved.
+* $version      1.0
+*/
+
+table {
+	width: 100%;
+
+	th {
+		background-color: $color-green-dark;
+		color: white;
+	}
+
+	td {
+		padding: 0.2em;
+	}
+}

@@ -39,6 +39,7 @@
 /* -------------------------------------------------------------------------- */
 @import "generic/_typography.scss";
 @import "generic/_forms.scss";
+@import "generic/_tables.scss";
 @import "generic/_images.scss";
 @import "generic/_lists.scss";
 @import "generic/_buttons.scss";
@@ -58,6 +59,7 @@
 /* ---------- Modules ------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 @import "modules/_tabs.scss";
+@import "modules/_chart.scss";
 
 /* -------------------------------------------------------------------------- */
 /* ---------- Templates ----------------------------------------------------- */
