@@ -21,7 +21,7 @@
             <div class="logo">
                 <?php include("includes/GP-logo-white.php"); ?>
             </div>
-            <button class="btn-toggle-nav" data-el="btn" aria-live="polite" data-behavior="menuToggleButton">
+            <button class="btn-toggle-nav" data-el="btn" aria-live="polite">
                 <span class="text">Open menu</span>
                 <span class="icon">
                   <?php include("includes/menu.php"); ?>
@@ -105,7 +105,7 @@
                     <p>Our public services from health care and education, through to street cleaning and rubbish collection must remain accountable and run for the benefit of our community, not for profit. Both Labour and the Conservatives want to continue to privatise and contract out vital services.</p>
                     <h3 class="sub-heading">Clean air and greener streets</h3>
                     <p>The whole community benefits when streets are reclaimed for pedestrians and cyclists, areas are “greened” and the local area becomes a safer, more pleasant place to live. Lambeth is now the deadliest area in London, with more traffic fatalities than anywhere else, and over 100 deaths a year linked to polluted air. This must end.</p>
-                    <p>Do you agree with Jonathan’s priorities for Streatham? <a href="#conenct">Let him know</a></p>
+                    <p>Do you agree with Jonathan’s priorities for Streatham? <a href="#connect">Let him know</a></p>
                 </div>
             </div>
         </section>
@@ -192,7 +192,7 @@
                             <td>5.39%</td>
                         </tr>
                     </table>
-                    <a href="#table-survey-chart" data-behavior="surveyChartToggle">View figure as a table</a>
+                    <p><a href="#table-survey-chart" data-behavior="surveyChartToggle">View figure as a table</a></p>
                     <p>Take the survey yourself at <a href="http://voteforpolicies.org.uk/" target="_blank">www.voteforpolicies.org</a></p>
                     <p><a href="http://greenparty.org.uk/values/" rel="external" target="_blank">Find out more about what the Green Party stand for</a></p>
                 </section>
@@ -207,35 +207,39 @@
                 </h2>
                 <p>Jonathan would be really pleased to hear from you. Please do get in touch if you would like to help with his
 campaign or ask any questions. Or call his Streatham office: 020 8769 8163</p>
-                <a href="https://twitter.com/jon_bartley" class="link-sm" target="_blank">
-                    <span class="text">Twitter</span>
-                    <span class="icon">
-                        <?php include("includes/sm-icon-twitter.php"); ?>
-                    </span>
-                </a>
-                <a href="https://www.facebook.com/jonathan.c.bartley" class="link-sm" target="_blank">
-                    <span class="text">Facebook</span>
-                    <span class="icon">
-                        <?php include("includes/sm-icon-fb.php"); ?>
-                    </span>
-                </a>
-                <a href="mailto:jonathan.bartley@greenparty.org.uk" class="link-sm" target="_blank">
-                    <span class="text">Email</span>
-                    <span class="icon">
-                        <?php include("includes/sm-icon-email.php"); ?>
-                    </span>
-                </a>
-                <a href="https://www.youtube.com/channel/UCWAkdD1ox4r1PFAX0S31GCw" class="link-sm" target="_blank">
-                    <span class="text">You Tube</span>
-                    <span class="icon">
-                        <?php include("includes/sm-icon-youtube.php"); ?>
-                    </span>
-                </a>
+                <div class="wrapper-sm-link">
+                    <a href="https://twitter.com/jon_bartley" class="link-sm" target="_blank">
+                        <span class="text">Twitter</span>
+                        <span class="icon">
+                            <?php include("includes/sm-icon-twitter.php"); ?>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/jonathan.c.bartley" class="link-sm" target="_blank">
+                        <span class="text">Facebook</span>
+                        <span class="icon">
+                            <?php include("includes/sm-icon-fb.php"); ?>
+                        </span>
+                    </a>
+                    <a href="mailto:jonathan.bartley@greenparty.org.uk" class="link-sm" target="_blank">
+                        <span class="text">Email</span>
+                        <span class="icon">
+                            <?php include("includes/sm-icon-email.php"); ?>
+                        </span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCWAkdD1ox4r1PFAX0S31GCw" class="link-sm" target="_blank">
+                        <span class="text">You Tube</span>
+                        <span class="icon">
+                            <?php include("includes/sm-icon-youtube.php"); ?>
+                        </span>
+                    </a>
+                </div>
             </div>
         </section>
 
         <div class="footer-main">
-            <p>Jonathan Barley. Green Party candidate for Streatham, London. All rights reserved 2015.</p>
+            <div class="wrapper">
+                <p>Jonathan Barley. Green Party candidate for Streatham, London. All rights reserved 2015.</p>
+            </div>
         </div>
     <script data-main="/<?php echo $mode; ?>/scripts/config" src="/<?php echo $mode; ?>/scripts/libs/require.js"></script>
 </body>

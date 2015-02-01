@@ -76,3 +76,7 @@
 		color: $color-green-dark !important;
 	}
 }
+
+.list-item-feed:last-child {
+	padding-bottom: 0;
+}

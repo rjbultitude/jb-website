@@ -146,6 +146,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['compass:dev', 'jshint', 'modernizr']);
     grunt.registerTask('sass', ['compass:dev']);
     grunt.registerTask('js', ['jshint']);
-    grunt.registerTask('prod', ['compass:prod', 'modernizr', 'removelogging', 'requirejs']);
+    grunt.registerTask('prod', ['compass:prod', 'modernizr', 'requirejs']);
 
 };

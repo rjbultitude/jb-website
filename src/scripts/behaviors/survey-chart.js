@@ -22,11 +22,11 @@ define(['jquery'], function($) {
                 if (figure.is(':visible')) {
                     figure.hide();
                     table.show();
-                    $('.text', this).text('View data as image');
+                    btn.text('View data as image');
                 } else {
                     figure.show();
                     table.hide();
-                    $('.text', this).text('View data as table');
+                    btn.text('View data as table');
                 }
             });
         };

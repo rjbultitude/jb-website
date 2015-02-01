@@ -17,6 +17,10 @@
 	@extend %box;
 	@extend %section-bg;
 
+	.wrapper-sm-link {
+		padding: em(18) 0 0 0;
+	}
+
 	.link-sm {
 		@include column(3);
 

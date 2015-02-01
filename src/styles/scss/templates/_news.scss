@@ -19,6 +19,7 @@
 
 	.tabs-content-wrapper {
 		background-color: white;
+		padding-bottom: em(18);
 	}
 
 	.nav-tabs {
@@ -28,6 +29,7 @@
 		li {
 			width: 25%;
 			float: left;
+			margin-right: em(1);
 			@include border-top-left-radius(4px);
 			@include border-top-right-radius(4px);
 
@@ -47,6 +49,7 @@
 				color: white;
 				text-decoration: none;
 				text-align: center;
+				@include standard-transition-bg-color;
 
 				&:hover {
 					background-color: white;

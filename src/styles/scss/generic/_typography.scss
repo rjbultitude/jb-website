@@ -99,8 +99,11 @@ a {
     background: url('/images/icons/external.svg') no-repeat right 5px center $color-green-dark;
     color: white;
     margin-bottom: em(16);
+    @include standard-transition-bg-color;
 
-    @include hoverActiveFocus(background-color, $color-green);
+    @include hoverActiveFocus(background-color, $color-green) {
+        @include standard-transition-bg-color;
+    };
 
     .lt-ie8 & {
         background-image: url('/images/icons/external.png');

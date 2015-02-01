@@ -10,13 +10,21 @@
 
 table {
 	width: 100%;
+	margin: em(9) 0 em(18);
+
+	th,
+	td {
+		padding: 0.5em;
+	}
 
 	th {
 		background-color: $color-green-dark;
 		color: white;
 	}
 
-	td {
-		padding: 0.2em;
+	tr:nth-child(2n + 1) {
+		td {
+			background-color: lighten($color-grey-light, 65%);
+		}
 	}
 }
